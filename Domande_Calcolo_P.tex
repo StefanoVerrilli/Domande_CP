@@ -1,0 +1,35 @@
+\documentclass[20pt]{article}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+\usepackage{xcolor}
+ \renewcommand{\familydefault}{\rmdefault}
+
+\begin{document}
+
+\section{Domande di preparazione Calcolo Parallelo 2021:}
+\begin{enumerate}
+\color{black} \item Nella formulazione: $k*T(n)*\mu$, cosa rappresentano T(n) e $\mu$ e perché presentano entrambi dei limiti di ottimizzazione?
+\color{black} \item Descrivi brevemente i tre tipi di parallelismo
+\color{black} \item Quale differenza c' è tra processore e core?
+\color{black} \item Qual' è la differenza tra Calcolo Distribuito (DM) e Calcolo Parallelo (SM)?
+\color{black} \item Come è possibile ricavare la complessità di tempo con \textit{p} processori per la somma di \textit{n} numeri utilizzando la seconda strategia?
+\color{black} \item Quando è necessario utilizzare la formulazione della \textbf{legge di Ware-amhdal generalizzata} invece di quella normale? 
+\color{black} \item Nella formulazione classica della legge di Ware-amhdal, cosa rappresenta l' $\alpha$ e l' $1 - \alpha$?
+\color {black} \item Perché per l' algoritmo della somma, all' aumentare dei \textit{p} processori l' efficienza diminuisce drasticamente superati i 2?
+\color{black} \item Per quale motivo non è necessario sviluppare una terza strategia per la collezione, in ambiente MIMD-SM, della somma di \textit{n} numeri.
+\color{black} \item Relativamente al numero di elementi da sommare \textit{n}, quale caratteristica necessito per effettuare la collezione dei risultati tramite la II strategia?
+\color{black} \item Nell' algoritmo di somma di \textit{N} numeri, se ci trovassimo nel caso in cui il numero di elementi non è perfettamente divisibile per il numero di processori \textit{p}, come dovremmo procedere?
+\color{black} \item In che modo la non esatta divisibilità del numero di elementi per il numero di processori inficia negativamente per il calcolo dello \textit{speed-up}?
+\color{black} \item Quale rapporto esiste tra il tempo di comunicazione $t_{com}$ e il tempo di svolgimento di un operazione floating point $t_{calc}$?
+\color{black} \item Per quale motivo l' efficenza diminuisce all' aumentare dei processori per quanto riguarda il nucleo computazionale della somma di \textit{n} numeri?
+\color{black} \item Perché l' algoritmo del prodotto matrice-vettore viene definito del tipo \textit{embarassing parallel}?
+\color{black} \item Nella clausola \underline{scheduling} della libreria OpenMp per il costrutto parallel, quando è preferibile utilizzare la keyword \textit{dyncamic} invece di \textit{static}?
+\color{black} \item Quali sono i costrutti \underline{worksharing} della libreria OpenMP? Sapresti definirne i loro differenti utilizzi?
+\color{black} \item Riusciresti a ricavare l' overhead per quanto riguarda la prima, seconda e terza strategia del prodotto matrice-vettore in ambiente MIMD-DM?
+\color{black} \item Per quanto riguarda la seconda strategia del prodotto matrice-vettore, come viene assegnato il vettore \textit{b} ad ognuno dei core/processori?
+\color{black} \item Definisci l' overhead e dimostra come questo sia nullo per la prima strategia del nucleo computazionale del prodotto matrice-vettore.
+\color{black} \item Nella terza strategia del prodotto matrice-vettore, da quale misura dipende il numero di operazioni fatte nella collezione dei dati?
+\color{black} \item Nella terza strategia del prodotto matrice-vettore, nel caso in cui non ci sia l' esatta divisibilità sia per il numero di righe che di colonne, come si deve agire sulla suddivisione della matrice e del vettore? Come è possibile calcolarne lo speed-up tramite la formulazione di Ware-amhdal generalizzata?
+\color{black} \item Qual' è la differenza tra la \textit{weak scalability} e la \textit{strong scalability} e da quali leggi vengono definite entrambe? 
+
+\end{enumerate}
+\end{document}
