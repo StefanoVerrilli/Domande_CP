@@ -16,9 +16,10 @@
 \color{black} \item Come è possibile ricavare la complessità di tempo con \textit{p} processori per la somma di \textit{n} numeri utilizzando la seconda strategia?
 \color{black} \item Quando è necessario utilizzare la formulazione della \textbf{legge di Ware-amhdal generalizzata} invece di quella normale? 
 \color{black} \item Nella formulazione classica della legge di Ware-amhdal, cosa rappresenta l'$\alpha$ e l'$1 - \alpha$?
-\color {black} \item Perché per l'algoritmo della somma, all'aumentare dei \textit{p} processori l'efficienza diminuisce drasticamente superati i 2?
+\color{black} \item Perché per l'algoritmo della somma, all'aumentare dei \textit{p} processori l'efficienza diminuisce drasticamente superati i 2?
 \color{black} \item Nel nucleo computazionale della somma di \emph{n} numeri con \emph{p} processori, a quanto equivale la complessità di tempo dell' algoritmo (utilizzando la seconda strategia di collezione dei risultati) in ambiente MIMD-DM e MIMD-SM?
 \color{black} \item Per quale motivo non è necessario sviluppare una terza strategia per la collezione, in ambiente MIMD-SM, della somma di \textit{n} numeri?
+\color{black} \item Spiega le caratteristiche della clausola \emph{shared} del costrutto \emph{parallel} della libreria OpenMp?
 \color{black} \item Relativamente al numero di processori \textit{p}, quale caratteristica necessito per effettuare la collezione dei risultati tramite la \RomanNumeralCaps{2} strategia?
 \color{black} \item Nell'algoritmo di somma di \textit{N} numeri, se ci trovassimo nel caso in cui il numero di elementi non è perfettamente divisibile per il numero di processori \textit{p}, come dovremmo procedere?
 \color{black} \item In che modo la non esatta divisibilità del numero di elementi per il numero di processori inficia negativamente per il calcolo dello \emph{speed-up}?
@@ -42,7 +43,8 @@
 \color{black} \item Nella terza strategia del prodotto matrice-vettore, nel caso in cui non ci sia l'esatta divisibilità sia per il numero di righe che di colonne, come si deve agire sulla suddivisione della matrice e del vettore? Come è possibile calcolarne lo speed-up tramite la formulazione di Ware-amhdal generalizzata?
 \color{black} \item Il costrutto \underline{for} della libreria OpenMP necessita di parentesi all'apertura? Spiega il motivo della risposta.
 \color{black} \item Nel nucleo computazionale del prodotto matrice per vettore, utilizzando la terza strategia della suddivisione dei dati e la seconda strategia per la collezione dei risultati, come è possibile ottenere la complessità di tempo con \emph{p} processori in ambiente MIMD-DM e MIMD-SM?
-\color{black} \item Qual è la differenza tra la \emph{weak scalability} e la \emph{strong scalability} e da quali leggi vengono definite entrambe? 
+\color{black} \item Qual è la differenza tra la \emph{weak scalability} e la \emph{strong scalability} e da quali leggi vengono definite entrambe?
+\color{black} \item Sapresti spiegare il perchè nel calcolo della complessità di tempo del nucleo computazionale del prodotto matrice-vettore con seconda e terza strategia di suddivisione dei dati non compare, nel calcolo della collezione dei risultati, il termine relativo al numero di righe \emph{M} ne tanto meno il numero di processori colonna \emph{p}?
 \color{black} \item Cosa comporta al routine della libreria MPI \emph{Scatter} e come differisce dalla routine \emph{Broadcast} sempre di quest' ultima libreria?
 
 \end{enumerate}
